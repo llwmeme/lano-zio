@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package sample;
+
+service SampleService {
+  rpc Process(Request) returns (Response);
+}
+
+message Request {
+  int32 ping = 1;
+}
+
+message Response {
+  int32 pong = 1;
+}
